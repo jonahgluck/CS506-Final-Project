@@ -20,11 +20,11 @@
 
 ***How we plan on modeling the data:***
 
-- We will start off by visualizing the data using scatterplots, checking to see what features correlate in the initial stages of data exploration. 
+- We plan to use machine learning models (including but not limited to logistic regression, decision trees, random forests, SVM, naive Bayes, and neural networks) trained on x% of the dataset to determine if a given request is malicious. The exact model we implement will depend on our data analysis. 
 
 ***How we plan on visualizing the data:***
 
-- We will start off by visualizing the data using scatterplots, checking to see what features correlate in the initial stages of data exploration. 
+- Initially, we will perform exploratory data analysis (EDA) using scatter plots, bar charts, heatmaps, importance of features plot in decision trees and other visualizations to identify which features are correlated.  This will help guide our feature selection for the model.
 
 ***Test plan:***
 
