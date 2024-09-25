@@ -1,6 +1,6 @@
 # CS 506 Final Project
 
-### Members: Jonah, Cam, Sean
+### Members: Jonah, Yanjia Kan(kyjbu@bu.edu), Sean
 
 ---
 
