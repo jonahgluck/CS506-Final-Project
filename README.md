@@ -1,12 +1,33 @@
 # CS 506 Final Project
 
-Proposal (Due 10/1)
+### Members: Jonah, Cam, Sean
 
-The project proposal should include the following:
+---
 
-	Description of the project.
-	Clear goal(s) (e.g. Successfully predict the number of students attending lecture based on the weather report).
-	What data needs to be collected and how you will collect it (e.g. scraping xyz website or polling students).
-	How you plan on modeling the data (e.g. clustering, fitting a linear model, decision trees, XGBoost, some sort of deep learning method, etc.).
-	How do you plan on visualizing the data? (e.g. interactive t-SNE plot, scatter plot of feature x vs. feature y).
-	What is your test plan? (e.g. withhold 20% of data for testing, train on data collected in October and test on data collected in November, etc.).
+## Proposal
+
+***Description of the project:***
+
+- A project to predict cloud-based attacks using access logs and anomaly detection. The goal would be to identify potential security breaches in cloud environments (such as AWS, Azure, or GCP) by analyzing access logs and spotting unusual patterns, such as unauthorized access attempts or data exfiltration. 
+
+***Goals:***
+
+- Develop a model that will predict, given the nature of the request, whether or not it can be deemed “evil” (confirmed malicious activity).
+
+***What data needs to be collected and how we will collect it:***
+
+- Data about web requests sent to cloud providers that indicates whether such a request was confirmed to be a part of an attack. Such a dataset can be retrieved straight from the cloud providers, as such data is logged. We will pull public dataset(s) using the requests library in python. 
+
+***How we plan on modeling the data:***
+
+- We will start off by visualizing the data using scatterplots, checking to see what features correlate in the initial stages of data exploration. 
+
+***How we plan on visualizing the data:***
+
+- We will start off by visualizing the data using scatterplots, checking to see what features correlate in the initial stages of data exploration. 
+
+***Test plan:***
+
+- In the context of training and testing, we will use x% of the oldest data in the dataset to train the model, and the remaining “new” data to test and check if, given the nature of the request, such a request is “evil.” We are going to use the time column to split the data for a progressive analysis as if the data is coming in real-time. 
+
+---
