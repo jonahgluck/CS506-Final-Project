@@ -12,7 +12,8 @@
 
 ***Goals:***
 
-- Develop a model that will predict, given the nature of the request, whether or not it can be deemed “evil” (confirmed malicious activity).
+- Develop a model that will predict, given the nature of the request, whether or not it can be deemed “evil” (confirmed malicious activity).This will be achieved through analyzing the relationships between features using data analysis techniques, ultimately building a predictive model.
+
 
 ***What data needs to be collected and how we will collect it:***
 
@@ -28,6 +29,6 @@
 
 ***Test plan:***
 
-- In the context of training and testing, we will use x% of the oldest data in the dataset to train the model, and the remaining “new” data to test and check if, given the nature of the request, such a request is “evil.” We are going to use the time column to split the data for a progressive analysis as if the data is coming in real-time. 
+- In the context of training and testing, we will use x% of the oldest data in the dataset to train the model, and the remaining “new” data to test and validate and check if, given the nature of the request, such a request is “evil.” We are going to use the time column to split the data for a progressive analysis as if the data is coming in real-time. Depending on the size of the dataset, we may also consider using k-fold cross-validation to improve model accuracy.  Metrics such as cross-entropy loss, confusion matrices, and others will be used to evaluate the model's performance on the test set.
 
 ---
