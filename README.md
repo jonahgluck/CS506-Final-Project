@@ -32,3 +32,27 @@
 - In the context of training and testing, we will use x% of the oldest data in the dataset to train the model, and the remaining “new” data to test and validate and check if, given the nature of the request, such a request is “evil.” We are going to use the time column to split the data for a progressive analysis as if the data is coming in real-time. Depending on the size of the dataset, we may also consider using k-fold cross-validation to improve model accuracy.  Metrics such as cross-entropy loss, confusion matrices, and others will be used to evaluate the model's performance on the test set.
 
 ---
+
+## Midterm Report
+
+***TODO: ADD YOUTUBE LINK TO PRESENTATION***
+
+***Data used:***
+
+- TODO: Introduce dataset, providing context on where it came from etc
+
+***Visualizations & insights:***
+
+- TODO: Include plots & describe relationships + how they might relate to the classifications 
+
+***First attempt at modeling data:***
+
+- TODO: Talk about what deep learning methods were used
+
+***Preliminary results:***
+
+- TODO: Talk about accuracy of model etc
+
+***Next steps:***
+
+- TODO: Talk about how we can improve our model/what else we can try
