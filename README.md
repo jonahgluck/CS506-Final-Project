@@ -35,7 +35,7 @@
 
 ## Midterm Report
 
-***TODO: ADD YOUTUBE LINK TO PRESENTATION***
+Click [here](https://youtu.be/eP1ZI6YIXi0) for presentation
 
 ***Data used:***
 
