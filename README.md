@@ -45,14 +45,17 @@ Click [here](https://youtu.be/eP1ZI6YIXi0) for presentation
 ***Visualizations & insights:***
 
 - TODO: Include plots & describe relationships + how they might relate to the classifications 
+To better understand our dataset, we plan to include a series of visualizations, such as scatter plots, heatmaps, and bar charts. These plots will help uncover relationships between features and identify patterns indicative of different classifications (benign, outlier, malicious). Insights from these visualizations will guide our feature engineering process, as well as help us pinpoint key attributes that may signal malicious behavior.
 
 ***First attempt at modeling data:***
 
 - TODO: Talk about what deep learning methods were used
+Our initial modeling approach utilized a deep learning neural network with four layers (128, 64, 32 neurons) and ReLU activation functions between layers. We used a Cross-Entropy loss function optimized with Adam (learning rate: 0.001) and trained over 100 epochs. This model setup provided a baseline to evaluate the dataset's suitability for deep learning.
 
 ***Preliminary results:***
 
 - TODO: Talk about accuracy of model etc
+Our first model achieved a test accuracy of 75.85%, with class-specific AUC scores of 0.91 for benign, 0.82 for outlier, and 0.91 for malicious classes. The confusion matrix indicated areas where the model struggled, particularly in distinguishing between outliers and malicious events. These preliminary results provide a foundation for further improvements, including feature engineering and hyperparameter tuning.
 
 ***Next steps:***
 
