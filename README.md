@@ -46,6 +46,19 @@ Click [here](https://youtu.be/eP1ZI6YIXi0) for presentation
 
 - To better understand our dataset, we plan to include a series of visualizations, such as scatter plots, heatmaps, and bar charts. These plots will help uncover relationships between features and identify patterns indicative of different classifications (benign, outlier, malicious). Insights from these visualizations will guide our feature engineering process, as well as help us pinpoint key attributes that may signal malicious behavior.
 - One of the major insights was the fact that per feature, the difference between benign & malicious were apparent, while outliers seemed to be more unpredictable, meaning that a careful treatment of outliers will aid in the development of our model.  
+- Classification counts over three days:
+![labels 6/12](./readme_images/labels_6:12.png)
+![labels 6/13](./readme_images/labels_6:13.png)
+![labels 6/14](./readme_images/labels_6:14.png)
+- Average bytes in over three days per classification:
+![bytes in 6/12](./readme_images/bytes_in_6:12.png)
+![bytes in 6/13](./readme_images/bytes_in_6:13.png)
+![bytes in 6/14](./readme_images/bytes_in_6:14.png)
+- Average entropy over three days per classification
+![entropy 6/12](./readme_images/entropy_6:12.png)
+![entropy 6/13](./readme_images/entropy_6:13.png)
+![entropy 6/14](./readme_images/entropy_6:14.png)
+- ***Bar charts for other labels shown in presentation & sean-data-exploration notebook***
 
 ***First attempt at modeling data:***
 
