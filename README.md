@@ -2,6 +2,20 @@
 
 ### Members: Jonah Gluck (jonahg@bu.edu), Yanjia Kan(kyjbu@bu.edu), Sean McCarty(mccartys@bu.edu)
 
+project/
+├── data/
+│   ├── 2022.06.12.csv
+│   ├── 2022.06.13.csv
+│   ├── 2022.06.14.csv
+├── *.py files
+├── Makefile
+├── requirements.txt
+
+    Place the CSV files in the data/ directory.
+    Run make install to install dependencies.
+    Run make run to execute the script.
+
+
 ---
 
 ## Proposal
