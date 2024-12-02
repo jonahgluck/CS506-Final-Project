@@ -11,10 +11,92 @@ project/
 ├── Makefile
 ├── requirements.txt
 
-    Place the CSV files in the data/ directory.
-    Run make install to install dependencies.
-    Run make run to execute the script.
+Prerequisites
 
+    Install Python 3.7 or higher.
+    Clone the repository and ensure the data/ folder contains the required .csv files.
+
+Installation
+
+    Install the necessary dependencies using pip:
+    ```
+    make install
+    ```
+
+    or 
+    ```
+    pip install -r requirements.txt
+    ```
+
+    Run Instructions
+    1. Preprocessing and Clustering Analysis
+    To preprocess the dataset and perform clustering analysis:
+    ```
+    make run_preprocess
+    ```
+    This script:
+
+    - Loads and merges the LUFlow dataset.
+    - Cleans and preprocesses the data.
+    - Scales features and splits the data into training and testing sets.
+    - Performs KMeans clustering and visualizes results.
+
+    2. Simple Linear Model for Classification
+    To run the simple linear model for binary classification:
+    ```
+    make run_simple
+    ```
+
+    This script:
+
+    Uses a fully connected neural network to classify the preprocessed data.
+    Outputs training loss and accuracy on the test set.
+    3. ResNet-Inspired Model for Classification
+    To run the ResNet-inspired model for binary classification:
+    ```
+    make run_resnet
+    ```
+    This script:
+
+    Implements a ResNet-like architecture adapted for tabular data.
+    Outputs training loss and accuracy on the test set.
+
+    Cleaning Temporary Files
+
+    To clean up temporary files and cache:  
+    ```
+    make clean
+    ```
+
+Dataset Information
+
+The dataset contains network traffic features such as packet size, protocol, and entropy, along with labels for binary classification:
+
+    Benign (0)
+    Malicious (1)
+
+Dependencies
+
+Dependencies are listed in the requirements.txt file. Key libraries include:
+
+    numpy and pandas for data manipulation.
+    matplotlib for data visualization.
+    scikit-learn for preprocessing, clustering, and evaluation.
+    torch for implementing neural networks.
+
+Example Output
+
+    KMeans Clustering:
+        Visualizes clusters based on PCA-reduced features.
+        Reports clustering accuracy.
+
+    Model Training:
+        Logs training progress.
+        Outputs final accuracy and confusion matrices.
+
+Notes
+
+Ensure that the data/ folder exists and contains the required .csv files. Modify the file paths in the scripts if the dataset structure changes.
 
 ---
 
