@@ -9,8 +9,8 @@ run_simple:
 run_resnet:
 	python network_intrusion_detection_resnet.py
 
-run_preprocess:
-	python process_luflow_data.py
+run_kmeans:
+	python network_intrusion_detection_kmeans.py
 
 clean:
 	rm -rf __pycache__
