@@ -1,7 +1,7 @@
 # CS 506 Final Project
 
 ### Members: Jonah Gluck (jonahg@bu.edu), Yanjia Kan(kyjbu@bu.edu), Sean McCarty(mccartys@bu.edu)
-
+```
 project/
 ├── data/
 │   ├── 2022.06.12.csv
@@ -10,63 +10,64 @@ project/
 ├── *.py files
 ├── Makefile
 ├── requirements.txt
+```
 
 Prerequisites
 
-    Install Python 3.7 or higher.
-    Clone the repository and ensure the data/ folder contains the required .csv files.
+Install Python 3.7 or higher.
+Clone the repository and ensure the data/ folder contains the required .csv files.
 
 Installation
 
-    Install the necessary dependencies using pip:
-    ```
-    make install
-    ```
+Install the necessary dependencies using pip:
+```
+make install
+```
 
-    or 
-    ```
-    pip install -r requirements.txt
-    ```
+or 
+```
+pip install -r requirements.txt
+```
 
-    Run Instructions
-    1. Preprocessing and Clustering Analysis
-    To preprocess the dataset and perform clustering analysis:
-    ```
-    make run_preprocess
-    ```
-    This script:
+Run Instructions
+1. Preprocessing and Clustering Analysis
+To preprocess the dataset and perform clustering analysis:
+```
+make run_preprocess
+```
+This script:
 
-    - Loads and merges the LUFlow dataset.
-    - Cleans and preprocesses the data.
-    - Scales features and splits the data into training and testing sets.
-    - Performs KMeans clustering and visualizes results.
+- Loads and merges the LUFlow dataset.
+- Cleans and preprocesses the data.
+- Scales features and splits the data into training and testing sets.
+- Performs KMeans clustering and visualizes results.
 
-    2. Simple Linear Model for Classification
-    To run the simple linear model for binary classification:
-    ```
-    make run_simple
-    ```
+2. Simple Linear Model for Classification
+To run the simple linear model for binary classification:
+```
+make run_simple
+```
 
-    This script:
+This script:
 
-    Uses a fully connected neural network to classify the preprocessed data.
-    Outputs training loss and accuracy on the test set.
-    3. ResNet-Inspired Model for Classification
-    To run the ResNet-inspired model for binary classification:
-    ```
-    make run_resnet
-    ```
-    This script:
+Uses a fully connected neural network to classify the preprocessed data.
+Outputs training loss and accuracy on the test set.
+3. ResNet-Inspired Model for Classification
+To run the ResNet-inspired model for binary classification:
+```
+make run_resnet
+```
+This script:
 
-    Implements a ResNet-like architecture adapted for tabular data.
-    Outputs training loss and accuracy on the test set.
+Implements a ResNet-like architecture adapted for tabular data.
+Outputs training loss and accuracy on the test set.
 
-    Cleaning Temporary Files
+Cleaning Temporary Files
 
-    To clean up temporary files and cache:  
-    ```
-    make clean
-    ```
+To clean up temporary files and cache:  
+```
+make clean
+```
 
 Dataset Information
 
