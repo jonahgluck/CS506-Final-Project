@@ -30,19 +30,7 @@ pip install -r requirements.txt
 ```
 
 Run Instructions
-1. Preprocessing and Clustering Analysis
-To preprocess the dataset and perform clustering analysis:
-```
-make run_preprocess
-```
-This script:
-
-- Loads and merges the LUFlow dataset.
-- Cleans and preprocesses the data.
-- Scales features and splits the data into training and testing sets.
-- Performs KMeans clustering and visualizes results.
-
-2. Simple Linear Model for Classification
+Simple Linear Model for Classification
 To run the simple linear model for binary classification:
 ```
 make run_simple
@@ -52,7 +40,7 @@ This script:
 
 Uses a fully connected neural network to classify the preprocessed data.
 Outputs training loss and accuracy on the test set.
-3. ResNet-Inspired Model for Classification
+ResNet-Inspired Model for Classification
 To run the ResNet-inspired model for binary classification:
 ```
 make run_resnet
@@ -61,6 +49,12 @@ This script:
 
 Implements a ResNet-like architecture adapted for tabular data.
 Outputs training loss and accuracy on the test set.
+
+K-Means Model for Classification
+To run the K-Means model for binary classification:
+```
+make run_kmeans
+```
 
 Cleaning Temporary Files
 
