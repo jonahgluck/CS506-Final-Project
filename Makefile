@@ -3,14 +3,17 @@
 install:
 	pip install -r requirements.txt
 
+run_rf:
+	python randomforest.py
+
 run_simple:
-	python network_intrusion_detection.py
+	python ./models_we_tried/network_intrusion_detection.py
 
 run_resnet:
-	python network_intrusion_detection_resnet.py
+	python ./models_we_tried/network_intrusion_detection_resnet.py
 
 run_kmeans:
-	python network_intrusion_detection_kmeans.py
+	python ./models_we_tried/network_intrusion_detection_kmeans.py
 
 clean:
 	rm -rf __pycache__
