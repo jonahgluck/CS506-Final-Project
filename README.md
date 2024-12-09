@@ -244,6 +244,7 @@ Continued exploration of domain-specific feature transformations and integration
 In our journey to accurately predict outcomes using the LuFlow network dataset, we experimented with various modeling approaches, blending traditional machine learning techniques with modern deep learning methods. While each approach offered unique insights and improvements, the Random Forest classifier ultimately delivered the highest accuracy. Here's a breakdown of our efforts and findings:
 
 ***Machine Learning***
+
 **KMeans**
 
 Initially, we applied the KMeans algorithm to perform clustering analysis on the dataset. To simplify observation, outliers and malignant cases were grouped into label 1, while benign cases were assigned to label 0. Principal Component Analysis (PCA) was employed for dimensionality reduction, and a clustering plot based on the first and second principal components was generated. The clustering accuracy was 0.54. The plot demonstrated a significant overlap between the two clusters, making it challenging to distinguish between them. Subsequently, we attempted clustering using the first and second most important features, yielding an accuracy of only 0.48. The high degree of overlap persisted, making it difficult to establish an effective decision boundary.
@@ -272,10 +273,12 @@ The first two parameters increase model complexity and enhance performance, whil
 
 ## Results
 ![Confusion Matrix](readme_images/confusionmatrix.png)
+
 *Confusion Matrix*
 
 
 ![Performance Matrix](readme_images/result.png)
+
 *Performance Matrix*
 
 
