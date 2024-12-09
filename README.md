@@ -214,7 +214,7 @@ Our first attempt was a simple neural network with one hidden layer—a straight
 Performance: Initially struggled with ~75% accuracy.
 
 
-**Deep Learning**
+***Deep Learning***
 
 Encouraged by the potential of deep learning, we ventured into building neural network models to see if they could surpass the performance of Random Forests.
 
