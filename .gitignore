@@ -1,0 +1,5 @@
+# Environments
+.venv
+.ipynb_checkpoints
+labelled-training-data.csv
+.DS_Store
