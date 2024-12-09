@@ -136,7 +136,26 @@ Ensure that the data/ folder exists and contains the required .csv files. Modify
 <img src="/readme_images/entropy_6:13.png" alt="drawing" width="375"/>
 <img src="/readme_images/entropy_6:14.png" alt="drawing" width="375"/>
 
-***Test plan:***
+## PCA Analysis
+
+- The singular values of the numerical components show that $\approx$ 100% of the variance is explained by just one principal component. Here is a plot of the singular values to show said drop off:
+
+<img src="/readme_images/singular_values.png" alt="drawing" width="375"/>
+
+- Here is a plot using the two most significant principal components as axes, the fact that the first singular values uses billions shows how dominated the dataset is by just one singular value: 
+
+
+<img src="/readme_images/pca_2D.png" alt="drawing" width="500"/>
+
+- The plot using the three most significant singular values as components shows similar information. Since the plot is in 3D, it may be hard to visualize the data with a static image. Here is [Kaggle Notebook](https://www.kaggle.com/code/seanrmccarty/pca-visualization/edit) with the code for the PCA & Singular Values plots, at the bottom is the same 3D plot but interactive: 
+
+<img src="/readme_images/pca_3D.png" alt="drawing" width="500"/>
+
+- In addition to the dominance of a singular principal component, the PCA plots showcase how spread out the benign labels are, with both the malicious & outlier labels being concentrated in the same general area.
+
+
+
+## Test plan
 
 - In the context of training and testing, we will use 80% of the data in the dataset to train the model, and the remaining “new” data to test and validate and check if, given the nature of the request, such a request is “evil.” We are going to use the time column to split the data for a progressive analysis as if the data is coming in real-time. Depending on the size of the dataset, we may also consider using k-fold cross-validation to improve model accuracy.  Metrics such as cross-entropy loss, confusion matrices, and others will be used to evaluate the model's performance on the test set. One limitation of this dataset is that we are limited to three days of data, but this dataset is used in published literature; therefore, we will be using it as well. 
 
