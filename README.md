@@ -147,7 +147,7 @@ Ensure that the data/ folder exists and contains the required .csv files. Modify
 
 <img src="/readme_images/pca_2D.png" alt="drawing" width="500"/>
 
-- The plot using the three most significant singular values as components shows similar information. Since the plot is in 3D, it may be hard to visualize the data with a static image. Here is [Kaggle Notebook](https://www.kaggle.com/code/seanrmccarty/pca-visualization/edit) with the code for the PCA & Singular Values plots, at the bottom is the same 3D plot but interactive: 
+- The plot using the three most significant singular values as components shows similar information. Since the plot is in 3D, it may be hard to visualize the data with a static image. Here is the [Kaggle Notebook](https://www.kaggle.com/code/seanrmccarty/pca-visualization/edit) with the code for the PCA & Singular Values plots, at the bottom is the same 3D plot but interactive: 
 
 <img src="/readme_images/pca_3D.png" alt="drawing" width="500"/>
 
