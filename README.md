@@ -1,6 +1,15 @@
 # CS 506 Final Project
 
 ### Members: Jonah Gluck (jonahg@bu.edu), Yanjia Kan(kyjbu@bu.edu), Sean McCarty(mccartys@bu.edu)
+
+## Goal
+
+Our goal was to explore the [LUFlow](https://www.kaggle.com/datasets/mryanm/luflow-network-intrusion-detection-data-set/data) cybersecurity data set & fit predictive machine learning models to classify benign, malicious, and outlier labels on web requests.
+
+## Installation
+
+To run the models, you will need the necessary data. We used a subset of the LUFlow dataset for efficiency & memory purposes. Create a data directory and add the CSV files for 12-14 of June 2022 found on the [data page](https://www.kaggle.com/datasets/mryanm/luflow-network-intrusion-detection-data-set/data) of the LUFlow dataset.
+
 ```
 project/
 ├── data/
@@ -10,7 +19,7 @@ project/
 ├── *.py files
 ├── Makefile
 ├── requirements.txt
-```
+``` 
 
 Prerequisites
 
