@@ -209,7 +209,7 @@ Performance: Initially struggled with ~75% accuracy.
 
 Encouraged by the potential of deep learning, we ventured into building neural network models to see if they could surpass the performance of Random Forests.
 
-Takeaway: The baseline model was too simplistic to capture the intricate patterns within the data, leading to lower accuracy. It also missed key functionality such as batch normalization and dropout. Our "ImprovedLinearModel" boosted accuracy to 94% on our validation set. This model added more layers, incorporated batch normalization, and implemented dropout for regularization. The 1D CNN matched the performance of the Improved Linear Model, indicating that while convolutional layers can be powerful, they didn't provide additional benefits over the enhanced fully connected architecture for our specific dataset. 、
+Takeaway: The baseline model was too simplistic to capture the intricate patterns within the data, leading to lower accuracy. It also missed key functionality such as batch normalization and dropout. Our "ImprovedLinearModel" boosted accuracy to 94% on our validation set. This model added more layers, incorporated batch normalization, and implemented dropout for regularization. The 1D CNN matched the performance of the Improved Linear Model, indicating that while convolutional layers can be powerful, they didn't provide additional benefits over the enhanced fully connected architecture for our specific dataset.
 
 **Final Model -- Random Forest**
 
