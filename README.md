@@ -30,6 +30,11 @@ pip install -r requirements.txt
 ```
 
 Run Instructions
+Best model for randomforest:
+```
+make run_rf
+```
+
 Simple Linear Model for Classification
 To run the simple linear model for binary classification:
 ```
