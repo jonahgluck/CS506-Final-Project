@@ -178,10 +178,6 @@ Click [here](https://youtu.be/eP1ZI6YIXi0) for presentation
 ## Dataset
 
 ## Feature Engineering
-I'll help you create a concise yet informative feature engineering section for a README based on the document. I'll focus on presenting the key feature engineering techniques and their purposes in a clear, readable format.
-
-# Feature Engineering
-
 Our feature engineering approach transforms raw network flow data into a rich, informative representation that enables more sophisticated machine learning models. We employed several strategic techniques to enhance model predictive capabilities:
 
 ## 1. Ratio-Based Features
