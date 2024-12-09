@@ -266,5 +266,8 @@ In terms of optimization, grid search and cross-validation were applied. We focu
 The first two parameters increase model complexity and enhance performance, while the latter two control tree growth to prevent overfitting. The final hyperparameter configuration was: {'max_depth': 20, 'min_samples_leaf': 3, 'min_samples_split': 2, 'n_estimators': 200}.
 
 ## Results
+![Confusion Matrix](readme_images/confusionmatrix.png)
+![Performance Matrix](readme_images/result.png)
+
 
 ## Conclusion
