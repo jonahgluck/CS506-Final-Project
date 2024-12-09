@@ -167,3 +167,89 @@ Click [here](https://youtu.be/eP1ZI6YIXi0) for presentation
 - Going further, we will apply feature engineering for data processing, including data cleaning, data balancing, and feature correlation analysis.
 - We will also experiment with various machine learning models such as KNN, decision trees, and random forests.
 - Additionally, we plan to explore deep learning models like CNN and ResNet.
+
+# Final Report
+## Dataset
+
+## Feature Engineering
+I'll help you create a concise yet informative feature engineering section for a README based on the document. I'll focus on presenting the key feature engineering techniques and their purposes in a clear, readable format.
+
+# Feature Engineering
+
+Our feature engineering approach transforms raw network flow data into a rich, informative representation that enables more sophisticated machine learning models. We employed several strategic techniques to enhance model predictive capabilities:
+
+## 1. Ratio-Based Features
+
+Ratio features reveal complex relationships between network traffic attributes:
+
+- **Byte Ratio**: Compares incoming vs. outgoing bytes to identify data transfer patterns
+- **Packet Ratio**: Analyzes the balance of incoming and outgoing packets
+- **Byte-Packet Ratios**: Calculates average bytes per packet for both incoming and outgoing traffic
+- **Flow Efficiency**: Measures overall data transmission efficiency by comparing total bytes to total packets
+
+## 2. Entropy-Based Features
+
+Entropy features help detect anomalous or unusual network behaviors:
+
+- **Entropy per Byte**: Normalizes data randomness relative to total bytes transferred
+- **Total Entropy Ratio**: Provides another perspective on data randomness
+- **Bidirectional Entropy Ratio**: Compares entropy across different flow directions
+
+## 3. Binary Indicator Features
+
+Simple binary flags highlight critical network conditions:
+
+- **Well-Known Port Indicators**: Flag flows originating from or targeting standard service ports (ports < 1024)
+
+## 4. Difference-Based Features
+
+Difference calculations expose imbalances in network traffic:
+
+- **Byte Difference**: Net byte flow indicating data receive/send dynamics
+- **Packet Difference**: Net packet flow revealing packet transmission balance
+
+## 5. Logarithmic Transformations
+
+Log transformations stabilize variance and improve model training:
+
+- **Log Transformations**: Applied to bytes, duration to reduce the impact of extreme values and make patterns more discernible
+
+## 6. Aggregation Features
+
+Comprehensive features providing holistic network flow insights:
+
+- **Total Bytes**: Aggregate incoming and outgoing data volume
+- **Total Packets**: Combined packet count across flow directions
+- **Average Bytes per Packet**: Efficiency metric for data transmission
+
+## Results
+
+These feature engineering techniques enabled:
+- Capturing complex network traffic relationships
+- Normalizing and stabilizing data representations
+- Identifying critical network conditions
+- Improving model accuracy (up to 94% for Improved Linear Model and CNN)
+
+## Next Steps
+
+Continued exploration of domain-specific feature transformations and integration of additional data sources promises further improvements in predictive capabilities.
+
+## Models
+In our journey to accurately predict outcomes using the LuFlow network dataset, we experimented with various modeling approaches, blending traditional machine learning techniques with modern deep learning methods. While each approach offered unique insights and improvements, the Random Forest classifier ultimately delivered the highest accuracy. Here's a breakdown of our efforts and findings:
+
+***Machine Learning***
+
+***Deep Learning***
+Encouraged by the potential of deep learning, we ventured into building neural network models to see if they could surpass the performance of Random Forests.
+
+Baseline Linear Model
+
+Our first attempt was a simple neural network with one hidden layer—a straightforward approach to establish a performance benchmark.
+
+Performance: Initially struggled with ~75% accuracy.
+
+Takeaway: The baseline model was too simplistic to capture the intricate patterns within the data, leading to lower accuracy. It also missed key functionality such as batch normalization and dropout. Our "ImprovedLinearModel" boosted accuracy to 94% on our validation set. This model added more layers, incorporated batch normalization, and implemented dropout for regularization. The 1D CNN matched the performance of the Improved Linear Model, indicating that while convolutional layers can be powerful, they didn't provide additional benefits over the enhanced fully connected architecture for our specific dataset. 
+
+## Results
+
+## Conclusion
