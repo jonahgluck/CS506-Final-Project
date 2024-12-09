@@ -238,17 +238,27 @@ Continued exploration of domain-specific feature transformations and integration
 In our journey to accurately predict outcomes using the LuFlow network dataset, we experimented with various modeling approaches, blending traditional machine learning techniques with modern deep learning methods. While each approach offered unique insights and improvements, the Random Forest classifier ultimately delivered the highest accuracy. Here's a breakdown of our efforts and findings:
 
 ***Machine Learning***
+**KMeans**
+Initially, we applied the KMeans algorithm to perform clustering analysis on the dataset. To simplify observation, outliers and malignant cases were grouped into label 1, while benign cases were assigned to label 0. Principal Component Analysis (PCA) was employed for dimensionality reduction, and a clustering plot based on the first and second principal components was generated. The clustering accuracy was 0.54. The plot demonstrated a significant overlap between the two clusters, making it challenging to distinguish between them. Subsequently, we attempted clustering using the first and second most important features, yielding an accuracy of only 0.48. The high degree of overlap persisted, making it difficult to establish an effective decision boundary.
 
-***Deep Learning***
-Encouraged by the potential of deep learning, we ventured into building neural network models to see if they could surpass the performance of Random Forests.
-
-Baseline Linear Model
-
+**Baseline Linear Model**
 Our first attempt was a simple neural network with one hidden layer—a straightforward approach to establish a performance benchmark.
-
 Performance: Initially struggled with ~75% accuracy.
 
-Takeaway: The baseline model was too simplistic to capture the intricate patterns within the data, leading to lower accuracy. It also missed key functionality such as batch normalization and dropout. Our "ImprovedLinearModel" boosted accuracy to 94% on our validation set. This model added more layers, incorporated batch normalization, and implemented dropout for regularization. The 1D CNN matched the performance of the Improved Linear Model, indicating that while convolutional layers can be powerful, they didn't provide additional benefits over the enhanced fully connected architecture for our specific dataset. 
+
+**Deep Learning**
+Encouraged by the potential of deep learning, we ventured into building neural network models to see if they could surpass the performance of Random Forests.
+
+Takeaway: The baseline model was too simplistic to capture the intricate patterns within the data, leading to lower accuracy. It also missed key functionality such as batch normalization and dropout. Our "ImprovedLinearModel" boosted accuracy to 94% on our validation set. This model added more layers, incorporated batch normalization, and implemented dropout for regularization. The 1D CNN matched the performance of the Improved Linear Model, indicating that while convolutional layers can be powerful, they didn't provide additional benefits over the enhanced fully connected architecture for our specific dataset. 、
+
+**Final Model -- Random Forest**
+For model selection, we primarily considered accuracy and F1 score as evaluation metrics. The final model selected was the Random Forest classifier. This choice was based on the complexity of the dataset and its suitability for multi-class classification tasks. Random Forest was preferred because it can automatically capture feature interactions, and each tree considers different feature combinations, enhancing model robustness.
+In terms of optimization, grid search and cross-validation were applied. We focused on tuning four key hyperparameters:
+- The number of trees (n_estimators),
+- The maximum depth of the trees (max_depth),
+- The minimum number of samples required to split a node (min_samples_split), and
+- The minimum number of samples required to be at a leaf node (min_samples_leaf).
+The first two parameters increase model complexity and enhance performance, while the latter two control tree growth to prevent overfitting. The final hyperparameter configuration was: {'max_depth': 20, 'min_samples_leaf': 3, 'min_samples_split': 2, 'n_estimators': 200}.
 
 ## Results
 
