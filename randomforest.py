@@ -61,8 +61,8 @@ X_test = test.values
 
 best_rf = RandomForestClassifier(
     max_depth=20,
-    min_samples_leaf=3,
-    min_samples_split=2,
+    min_samples_leaf=1,
+    min_samples_split=5,
     n_estimators=200,
     random_state=42  
 )
