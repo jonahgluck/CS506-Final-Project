@@ -107,7 +107,6 @@ Ensure that the data/ folder exists and contains the required .csv files. Modify
 ***Data used:***
 
 - The dataset we used is the public [LUFlow Dataset]([https://www.kaggle.com/path-to-dataset](https://www.kaggle.com/datasets/mryanm/luflow-network-intrusion-detection-data-set)) from Kaggle, which is a flow-based intrusion detection dataset. LUFlow contains telemetry containing emerging attack vectors through the composition of honeypots within Lancaster University's address space. The labelling mechanism is autonomous and is supported by a robust ground truth through correlation with third part Cyber Threat Intelligence (CTI) sources, enabling the constant capture, labelling and publishing of telemetry to this repository. The dataset contains 15 features and three types of labels: benign, outlier, and malicious. 
-- To thoroughly understand the dataset, our project has so far focused on the data from June 2022 for analysis and model training.
 
 ***Visualizations & insights:***
 
