@@ -260,5 +260,15 @@ The first two parameters increase model complexity and enhance performance, whil
 
 ![Performance Matrix](readme_images/result.png)
 
+## Conclusion 
+To further refine the models and improve detection capabilities, we propose:
+
+    Real-Time Deployment: Implementing streaming analytics for live traffic classification to evaluate the model's performance in a production environment.
+    Feature Expansion: Exploring additional domain-specific features or network flow attributes to capture emerging attack patterns.
+    Explainability: Developing interpretable models or incorporating SHAP values to provide insights into classification decisions.
+
+This study lays a solid foundation for utilizing machine learning in network security and demonstrates the potential of feature-rich models for identifying malicious activities effectively.
+
+
 
 
